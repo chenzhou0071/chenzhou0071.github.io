@@ -53,6 +53,9 @@
   border-radius: 8px;
   margin: 0 auto 1.5rem;
 }
+.not-found-msg {
+  margin-bottom: 1.5rem;
+}
 .not-found h1 {
   font-size: 2rem;
   margin-bottom: 0.5rem;
