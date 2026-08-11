@@ -4,7 +4,7 @@ url: "/about/"
 ---
 
 <div class="about-avatar">
-  <img src="/img/avatar.svg" alt="沉舟的头像">
+  <img src="/img/avatar.jpg" alt="沉舟的头像">
 </div>
 
 ## 你好，我是沉舟

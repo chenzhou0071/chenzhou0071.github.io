@@ -19,9 +19,11 @@
   margin: 0 auto 1.5rem;
 }
 .not-found h1 {
-  font-size: 3rem;
+  font-size: 2rem;
   margin-bottom: 0.5rem;
 }
 .not-found p {
   color: var(--secondary);
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
 }
