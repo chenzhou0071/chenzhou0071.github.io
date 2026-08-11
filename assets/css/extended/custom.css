@@ -1,0 +1,27 @@
+/* 关于页头像 */
+.about-avatar img {
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  margin-bottom: 0.5rem;
+}
+
+/* 404 页面 */
+.not-found {
+  text-align: center;
+  padding: 3rem 1rem;
+}
+.not-found img {
+  max-width: 480px;
+  width: 100%;
+  border-radius: 8px;
+  margin: 0 auto 1.5rem;
+}
+.not-found h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+.not-found p {
+  color: var(--secondary);
+}

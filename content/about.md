@@ -3,6 +3,10 @@ title: "关于"
 url: "/about/"
 ---
 
+<div class="about-avatar">
+  <img src="/img/avatar.svg" alt="沉舟的头像">
+</div>
+
 ## 你好，我是沉舟
 
 后端开发方向，正在寻找实习机会。
