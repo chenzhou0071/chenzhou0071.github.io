@@ -6,7 +6,7 @@ url: "/about/"
 <div class="about-layout">
   <aside class="about-side">
     <div class="about-avatar">
-      <img src="/img/avatar.jpg" alt="沉舟的头像">
+      <img src="/img/avatar.jpg?v=2" alt="沉舟的头像">
     </div>
     <h2 class="about-name">沉舟</h2>
     <p class="about-tagline">后端开发 · 网络编程</p>

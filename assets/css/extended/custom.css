@@ -42,25 +42,31 @@
   }
 }
 
-/* 404 页面 */
-.not-found {
+/* 404 页面（自定义类名，避免与主题 .not-found 冲突） */
+main.nf-page {
   text-align: center;
   padding: 3rem 1rem;
+  position: static;
+  display: block;
+  height: auto;
+  font-size: inherit;
+  font-weight: normal;
 }
-.not-found img {
+main.nf-page img {
   max-width: 480px;
   width: 100%;
+  display: block;
   border-radius: 8px;
   margin: 0 auto 1.5rem;
 }
-.not-found-msg {
+.nf-msg {
   margin-bottom: 1.5rem;
 }
-.not-found h1 {
+main.nf-page h1 {
   font-size: 2rem;
   margin-bottom: 0.5rem;
 }
-.not-found p {
+main.nf-page p {
   color: var(--secondary);
   font-size: 0.95rem;
   margin-bottom: 1rem;
