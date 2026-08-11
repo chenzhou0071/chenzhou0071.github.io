@@ -15,7 +15,7 @@
   width: 160px;
   height: 160px;
   object-fit: cover;
-  margin-bottom: 0.75rem;
+  margin: 0 auto 0.75rem;
 }
 .about-name {
   font-size: 1.4rem;
