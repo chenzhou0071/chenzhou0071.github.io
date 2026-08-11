@@ -1,0 +1,9 @@
+baseURL = "https://chenzhou0071.github.io/"
+defaultContentLanguage = "zh-cn"
+locale = "zh-cn"
+title = "舟上码途"
+theme = "PaperMod"
+enableEmoji = true
+enableRobotsTXT = true
+paginate = 10
+timeZone = "Asia/Shanghai"
