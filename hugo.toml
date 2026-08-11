@@ -40,9 +40,9 @@ timeZone = "Asia/Shanghai"
 
   [params.giscus]
     repo = "chenzhou0071/chenzhou0071.github.io"
-    repoId = ""
+    repoId = "R_kgDOT1HeJw"
     category = "Announcements"
-    categoryId = ""
+    categoryId = "DIC_kwDOT1HeJ84DDJAo"
     mapping = "pathname"
     strict = "0"
     reactionsEnabled = "1"
