@@ -54,7 +54,7 @@ timeZone = "Asia/Shanghai"
 
   [params.homeInfoParams]
     Title = "舟上码途"
-    Content = "沉舟的技术手记。记录后端开发日志、项目复盘（Nexus Gateway）与面试经验。"
+    Content = "沉舟的技术手记。记录后端开发日志、项目复盘与面试经验。"
 
   [params.fuseOpts]
     isCaseSensitive = false
