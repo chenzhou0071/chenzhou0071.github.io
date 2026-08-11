@@ -30,7 +30,15 @@ summary: "为什么做这个博客，以及它会写些什么。"
 
 ## 关于这个站点
 
-博客用 Hugo + PaperMod 构建，源码在 [chenzhou0071.github.io 仓库](https://github.com/chenzhou0071/chenzhou0071.github.io)，写好的文章 push 上去，GitHub Actions 会自动构建部署。
+技术栈很简单，简单记录一下配置思路：
+
+- **Hugo**：静态站点生成器，用扩展版是为了支持 SCSS，写 Markdown 就能出站
+- **PaperMod**：主题通过 git submodule 引入，方便跟随上游更新；个性化修改都放在站点自己的 `assets/css/extended/` 和 `layouts/` 里覆盖，不动主题源码
+- **GitHub Actions**：工作流监听 main 分支推送——检出代码（含 submodule）→ 构建 → 上传产物 → 部署到 Pages，全程自动化
+
+评论用的 **giscus**——基于 GitHub Discussions，评论直接变成仓库里的 Discussion，不需要自建后端，是静态博客最省事的评论方案。
+
+源码在 [chenzhou0071.github.io 仓库](https://github.com/chenzhou0071/chenzhou0071.github.io)，写好的文章 push 上去就会自动上线。
 
 文章底部有 giscus 评论，欢迎留言交流。
 
