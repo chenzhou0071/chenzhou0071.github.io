@@ -36,6 +36,21 @@ timeZone = "Asia/Shanghai"
   ShowBreadCrumbs = true
   ShowRssButtonInSectionTermList = true
   description = "沉舟的技术手记：后端开发 / C 语言 / 网关 / 面试经验"
+  comments = true
+
+  [params.giscus]
+    repo = "chenzhou0071/chenzhou0071.github.io"
+    repoId = ""
+    category = "Announcements"
+    categoryId = ""
+    mapping = "pathname"
+    strict = "0"
+    reactionsEnabled = "1"
+    emitMetadata = "0"
+    inputPosition = "bottom"
+    theme = "preferred_color_scheme"
+    lang = "zh-CN"
+    crossorigin = "anonymous"
 
   [params.homeInfoParams]
     Title = "舟上码途"
