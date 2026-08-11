@@ -8,6 +8,9 @@ enableRobotsTXT = true
 paginate = 10
 timeZone = "Asia/Shanghai"
 
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
 [taxonomies]
   category = "categories"
   tag = "tags"
@@ -73,6 +76,12 @@ timeZone = "Asia/Shanghai"
   [[params.socialIcons]]
     name = "rss"
     url = "/index.xml"
+
+[[menu.main]]
+  identifier = "home"
+  name = "首页"
+  url = "/"
+  weight = 5
 
 [[menu.main]]
   identifier = "archives"
