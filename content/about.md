@@ -3,9 +3,15 @@ title: "关于"
 url: "/about/"
 ---
 
-<div class="about-avatar">
-  <img src="/img/avatar.jpg" alt="沉舟的头像">
-</div>
+<div class="about-layout">
+  <aside class="about-side">
+    <div class="about-avatar">
+      <img src="/img/avatar.jpg" alt="沉舟的头像">
+    </div>
+    <h2 class="about-name">沉舟</h2>
+    <p class="about-tagline">后端开发 · 网络编程</p>
+  </aside>
+  <div class="about-main">
 
 ## 你好，我是沉舟
 
@@ -25,3 +31,6 @@ url: "/about/"
 ## 关于这个博客
 
 「舟上码途」记录我的开发日志、项目复盘与面试经验，欢迎交流。
+
+  </div>
+</div>

@@ -1,10 +1,45 @@
-/* 关于页头像 */
+/* 关于页布局：左侧固定头像+名字，右侧内容 */
+.about-layout {
+  display: flex;
+  gap: 2.5rem;
+  align-items: flex-start;
+}
+.about-side {
+  flex: 0 0 200px;
+  text-align: center;
+  position: sticky;
+  top: 1.5rem;
+}
 .about-avatar img {
   border-radius: 50%;
-  width: 120px;
-  height: 120px;
+  width: 160px;
+  height: 160px;
   object-fit: cover;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+.about-name {
+  font-size: 1.4rem;
+  margin-bottom: 0.25rem;
+}
+.about-tagline {
+  color: var(--secondary);
+  font-size: 0.9rem;
+}
+.about-main {
+  flex: 1;
+  min-width: 0;
+}
+@media (max-width: 700px) {
+  .about-layout {
+    flex-direction: column;
+    align-items: center;
+  }
+  .about-side {
+    position: static;
+  }
+  .about-main {
+    width: 100%;
+  }
 }
 
 /* 404 页面 */
