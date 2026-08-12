@@ -42,6 +42,24 @@
   }
 }
 
+/* 分类/标签文章列表页的返回按钮 */
+.term-back {
+  margin-bottom: 0.5rem;
+}
+.term-back a {
+  display: inline-block;
+  font-size: 0.9rem;
+  color: var(--secondary);
+  border: 1px solid var(--tertiary);
+  border-radius: 6px;
+  padding: 0.25rem 0.75rem;
+  transition: color 0.15s, border-color 0.15s;
+}
+.term-back a:hover {
+  color: var(--primary);
+  border-color: var(--primary);
+}
+
 /* 404 页面（自定义类名，避免与主题 .not-found 冲突） */
 main.nf-page {
   text-align: center;
