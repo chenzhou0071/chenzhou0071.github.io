@@ -6,7 +6,7 @@
 
 {{- if eq .Kind "term" }}
 <nav class="term-back">
-  <a href="{{ .CurrentSection.RelPermalink }}">← 返回{{ if eq .Section "categories" }}分类{{ else }}标签{{ end }}</a>
+  <a href="{{ .Parent.RelPermalink }}">← 返回{{ if eq .Section "categories" }}分类{{ else }}标签{{ end }}</a>
 </nav>
 {{- end }}
 
