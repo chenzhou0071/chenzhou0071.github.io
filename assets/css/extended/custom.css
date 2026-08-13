@@ -61,43 +61,43 @@
 }
 
 /* 代码高亮：浅色模式用浅色 GitHub Light 配色，暗色模式保持主题深色 */
-:root {
+:root:not([data-theme=dark]) {
   --code-block-bg: #f6f8fa;
 }
-:root .chroma {
+:root:not([data-theme=dark]) .chroma {
   color: #24292e;
 }
-:root .md-content pre code {
+:root:not([data-theme=dark]) .md-content pre code {
   color: #24292e;
 }
-:root .chroma .ln,
-:root .chroma .lnt { color: #6e7781; }
-:root .chroma .k, :root .chroma .kc, :root .chroma .kd, :root .chroma .kn,
-:root .chroma .kp, :root .chroma .kr, :root .chroma .kt { color: #cf222e; }
-:root .chroma .s, :root .chroma .s1, :root .chroma .s2, :root .chroma .sb,
-:root .chroma .sc, :root .chroma .sd, :root .chroma .se, :root .chroma .sh,
-:root .chroma .si, :root .chroma .sx, :root .chroma .sr, :root .chroma .ss { color: #0a3069; }
-:root .chroma .c, :root .chroma .c1, :root .chroma .cm, :root .chroma .cs,
-:root .chroma .cp { color: #6e7781; }
-:root .chroma .m, :root .chroma .mf, :root .chroma .mh, :root .chroma .mi,
-:root .chroma .mo, :root .chroma .mb, :root .chroma .mx, :root .chroma .il { color: #0550ae; }
-:root .chroma .nf, :root .chroma .na, :root .chroma .nx { color: #8250df; }
-:root .chroma .nc, :root .chroma .nn { color: #953800; }
-:root .chroma .o, :root .chroma .ow { color: #24292e; }
-:root .chroma .nt, :root .chroma .nd { color: #116329; }
-:root .chroma .nb, :root .chroma .bp { color: #0550ae; }
-:root .chroma .err { color: #cf222e; }
-:root .chroma .hl { background-color: #fff8c5; }
-:root .chroma .ch, :root .chroma .cpf { color: #6e7781; }
-:root .chroma .no, :root .chroma .ni { color: #0550ae; }
-:root .chroma .ne { color: #cf222e; }
-:root .chroma .fm, :root .chroma .nl, :root .chroma .py { color: #8250df; }
-:root .chroma .nv, :root .chroma .vc, :root .chroma .vg, :root .chroma .vi, :root .chroma .vm { color: #24292e; }
-:root .chroma .sa, :root .chroma .dl { color: #0a3069; }
-:root .chroma .gd { color: #cf222e; background-color: #ffebe9; }
-:root .chroma .gi { color: #116329; background-color: #dafbe1; }
-:root .chroma .gh, :root .chroma .gu { color: #6e7781; }
-:root .chroma .gr, :root .chroma .gt { color: #cf222e; }
+:root:not([data-theme=dark]) .chroma .ln,
+:root:not([data-theme=dark]) .chroma .lnt { color: #6e7781; }
+:root:not([data-theme=dark]) .chroma .k, :root:not([data-theme=dark]) .chroma .kc, :root:not([data-theme=dark]) .chroma .kd, :root:not([data-theme=dark]) .chroma .kn,
+:root:not([data-theme=dark]) .chroma .kp, :root:not([data-theme=dark]) .chroma .kr, :root:not([data-theme=dark]) .chroma .kt { color: #cf222e; }
+:root:not([data-theme=dark]) .chroma .s, :root:not([data-theme=dark]) .chroma .s1, :root:not([data-theme=dark]) .chroma .s2, :root:not([data-theme=dark]) .chroma .sb,
+:root:not([data-theme=dark]) .chroma .sc, :root:not([data-theme=dark]) .chroma .sd, :root:not([data-theme=dark]) .chroma .se, :root:not([data-theme=dark]) .chroma .sh,
+:root:not([data-theme=dark]) .chroma .si, :root:not([data-theme=dark]) .chroma .sx, :root:not([data-theme=dark]) .chroma .sr, :root:not([data-theme=dark]) .chroma .ss { color: #0a3069; }
+:root:not([data-theme=dark]) .chroma .c, :root:not([data-theme=dark]) .chroma .c1, :root:not([data-theme=dark]) .chroma .cm, :root:not([data-theme=dark]) .chroma .cs,
+:root:not([data-theme=dark]) .chroma .cp { color: #6e7781; }
+:root:not([data-theme=dark]) .chroma .m, :root:not([data-theme=dark]) .chroma .mf, :root:not([data-theme=dark]) .chroma .mh, :root:not([data-theme=dark]) .chroma .mi,
+:root:not([data-theme=dark]) .chroma .mo, :root:not([data-theme=dark]) .chroma .mb, :root:not([data-theme=dark]) .chroma .mx, :root:not([data-theme=dark]) .chroma .il { color: #0550ae; }
+:root:not([data-theme=dark]) .chroma .nf, :root:not([data-theme=dark]) .chroma .na, :root:not([data-theme=dark]) .chroma .nx { color: #8250df; }
+:root:not([data-theme=dark]) .chroma .nc, :root:not([data-theme=dark]) .chroma .nn { color: #953800; }
+:root:not([data-theme=dark]) .chroma .o, :root:not([data-theme=dark]) .chroma .ow { color: #24292e; }
+:root:not([data-theme=dark]) .chroma .nt, :root:not([data-theme=dark]) .chroma .nd { color: #116329; }
+:root:not([data-theme=dark]) .chroma .nb, :root:not([data-theme=dark]) .chroma .bp { color: #0550ae; }
+:root:not([data-theme=dark]) .chroma .err { color: #cf222e; }
+:root:not([data-theme=dark]) .chroma .hl { background-color: #fff8c5; }
+:root:not([data-theme=dark]) .chroma .ch, :root:not([data-theme=dark]) .chroma .cpf { color: #6e7781; }
+:root:not([data-theme=dark]) .chroma .no, :root:not([data-theme=dark]) .chroma .ni { color: #0550ae; }
+:root:not([data-theme=dark]) .chroma .ne { color: #cf222e; }
+:root:not([data-theme=dark]) .chroma .fm, :root:not([data-theme=dark]) .chroma .nl, :root:not([data-theme=dark]) .chroma .py { color: #8250df; }
+:root:not([data-theme=dark]) .chroma .nv, :root:not([data-theme=dark]) .chroma .vc, :root:not([data-theme=dark]) .chroma .vg, :root:not([data-theme=dark]) .chroma .vi, :root:not([data-theme=dark]) .chroma .vm { color: #24292e; }
+:root:not([data-theme=dark]) .chroma .sa, :root:not([data-theme=dark]) .chroma .dl { color: #0a3069; }
+:root:not([data-theme=dark]) .chroma .gd { color: #cf222e; background-color: #ffebe9; }
+:root:not([data-theme=dark]) .chroma .gi { color: #116329; background-color: #dafbe1; }
+:root:not([data-theme=dark]) .chroma .gh, :root:not([data-theme=dark]) .chroma .gu { color: #6e7781; }
+:root:not([data-theme=dark]) .chroma .gr, :root:not([data-theme=dark]) .chroma .gt { color: #cf222e; }
 
 /* 404 页面（自定义类名，避免与主题 .not-found 冲突） */
 main.nf-page {
