@@ -25,6 +25,7 @@ timeZone = "Asia/Shanghai"
     codeFences = true
     guessSyntax = true
     lineNos = true
+    noClasses = false
     style = "dracula"
 
 [params]

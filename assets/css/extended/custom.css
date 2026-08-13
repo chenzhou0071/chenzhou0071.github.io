@@ -60,6 +60,45 @@
   border-color: var(--primary);
 }
 
+/* 代码高亮：浅色模式用浅色 GitHub Light 配色，暗色模式保持主题深色 */
+:root {
+  --code-block-bg: #f6f8fa;
+}
+:root .chroma {
+  color: #24292e;
+}
+:root .md-content pre code {
+  color: #24292e;
+}
+:root .chroma .ln,
+:root .chroma .lnt { color: #6e7781; }
+:root .chroma .k, :root .chroma .kc, :root .chroma .kd, :root .chroma .kn,
+:root .chroma .kp, :root .chroma .kr, :root .chroma .kt { color: #cf222e; }
+:root .chroma .s, :root .chroma .s1, :root .chroma .s2, :root .chroma .sb,
+:root .chroma .sc, :root .chroma .sd, :root .chroma .se, :root .chroma .sh,
+:root .chroma .si, :root .chroma .sx, :root .chroma .sr, :root .chroma .ss { color: #0a3069; }
+:root .chroma .c, :root .chroma .c1, :root .chroma .cm, :root .chroma .cs,
+:root .chroma .cp { color: #6e7781; }
+:root .chroma .m, :root .chroma .mf, :root .chroma .mh, :root .chroma .mi,
+:root .chroma .mo, :root .chroma .mb, :root .chroma .mx, :root .chroma .il { color: #0550ae; }
+:root .chroma .nf, :root .chroma .na, :root .chroma .nx { color: #8250df; }
+:root .chroma .nc, :root .chroma .nn { color: #953800; }
+:root .chroma .o, :root .chroma .ow { color: #24292e; }
+:root .chroma .nt, :root .chroma .nd { color: #116329; }
+:root .chroma .nb, :root .chroma .bp { color: #0550ae; }
+:root .chroma .err { color: #cf222e; }
+:root .chroma .hl { background-color: #fff8c5; }
+:root .chroma .ch, :root .chroma .cpf { color: #6e7781; }
+:root .chroma .no, :root .chroma .ni { color: #0550ae; }
+:root .chroma .ne { color: #cf222e; }
+:root .chroma .fm, :root .chroma .nl, :root .chroma .py { color: #8250df; }
+:root .chroma .nv, :root .chroma .vc, :root .chroma .vg, :root .chroma .vi, :root .chroma .vm { color: #24292e; }
+:root .chroma .sa, :root .chroma .dl { color: #0a3069; }
+:root .chroma .gd { color: #cf222e; background-color: #ffebe9; }
+:root .chroma .gi { color: #116329; background-color: #dafbe1; }
+:root .chroma .gh, :root .chroma .gu { color: #6e7781; }
+:root .chroma .gr, :root .chroma .gt { color: #cf222e; }
+
 /* 404 页面（自定义类名，避免与主题 .not-found 冲突） */
 main.nf-page {
   text-align: center;
