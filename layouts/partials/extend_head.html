@@ -1,2 +1,40 @@
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚢</text></svg>">
 <meta name="description" content="{{ .Site.Params.description }}">
+
+{{- /* 按需加载 mermaid.js：仅当页面正文包含 ```mermaid 代码块时引入。
+     注意：放在 extend_head 而非 extend_footer——footer 被 partialCached 缓存，
+     其 .Page 上下文属于先渲染的页面，条件判断会错乱。 */ -}}
+{{- if and .Page.RawContent (strings.Contains .Page.RawContent "```mermaid") }}
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+<script>
+    (function () {
+        function currentTheme() {
+            var t = document.documentElement.dataset.theme;
+            if (t === "auto") {
+                return window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "default";
+            }
+            return t === "dark" ? "dark" : "default";
+        }
+        function renderMermaid() {
+            document.querySelectorAll(".mermaid").forEach(function (el) {
+                // 首次渲染前记录源码；之后先恢复源码再渲染，
+                // 避免对已渲染的 SVG 文本二次解析（超过 maxTextSize 报错）
+                if (!el.getAttribute("data-src")) {
+                    el.setAttribute("data-src", el.textContent);
+                }
+                el.textContent = el.getAttribute("data-src");
+                el.removeAttribute("data-processed");
+            });
+            mermaid.run();
+        }
+        mermaid.initialize({ startOnLoad: false, theme: currentTheme() });
+        document.addEventListener("DOMContentLoaded", renderMermaid);
+        // 主题切换（按钮或系统偏好）后重新渲染，跟随浅色/暗色
+        var observer = new MutationObserver(function () {
+            mermaid.initialize({ theme: currentTheme() });
+            renderMermaid();
+        });
+        observer.observe(document.documentElement, { attributes: true, attributeFilter: ["data-theme"] });
+    })();
+</script>
+{{- end }}
