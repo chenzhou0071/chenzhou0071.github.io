@@ -1,6 +1,6 @@
 ---
 title: "SignalDrift 开发日志 ②：从零写一个游戏网关——自研二进制协议与并发模型"
-date: 2026-08-17
+date: 2026-08-18
 draft: false
 categories: ["dev-log"]
 tags: ["SignalDrift", "游戏开发", "go", "网络编程", "并发"]
