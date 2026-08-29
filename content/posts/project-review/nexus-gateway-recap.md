@@ -3,7 +3,7 @@ title: "Nexus Gateway：自研 C 语言网关复盘"
 date: 2026-08-13
 draft: false
 categories: ["project-review"]
-tags: ["c语言", "网关", "网络编程", "http"]
+tags: ["c语言", "网关", "网络编程", "http","项目复盘"]
 summary: "从零实现一个 C 语言 HTTP 网关的心路历程：架构设计、技术难点与踩坑记录。"
 ---
 
