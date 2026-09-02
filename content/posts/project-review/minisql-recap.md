@@ -1,6 +1,6 @@
 ---
 title: "MiniSQL：自研 C++ 数据库管理系统复盘"
-date: 2026-09-2
+date: 2026-09-02
 draft: false
 categories: ["project-review"]
 tags: ["c++", "数据库", "sql", "存储引擎", "网络编程","项目复盘"]
