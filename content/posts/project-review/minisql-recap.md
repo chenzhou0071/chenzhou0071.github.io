@@ -3,7 +3,7 @@ title: "MiniSQL：自研 C++ 数据库管理系统复盘"
 date: 2026-09-2
 draft: false
 categories: ["project-review"]
-tags: ["c++", "数据库", "sql", "存储引擎", "网络编程"]
+tags: ["c++", "数据库", "sql", "存储引擎", "网络编程","项目复盘"]
 summary: "从零实现一个 C++ 数据库管理系统的心路历程：SQL 解析、火山模型执行引擎、查询优化器、B+Tree 索引、WAL 事务与 Reactor 网络层。"
 ---
 
